@@ -1,4 +1,4 @@
-const API_KEY = `a9ca86a6cc6241909c6e1196980e115a`;
+// const API_KEY = {SE DEBE OBTENER UNA API KEY DESDE: https://home.openweathermap.org/users/sign_in}
 
 let temperature = document.getElementById(`temperature`);
 let lugar = document.getElementById(`lugar`);
