@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <link rel="icon" href="mexicanhat.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Lato&family=Nanum+Gothic&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <script src="https://kit.fontawesome.com/773216fefd.js" crossorigin="anonymous"></script>
+        
+    <title>WEAther</title>
+</head>
+<body>
+    <header class="headerApp">
+        <img src="weather.png" alt="" class="headerApp__img" href="#">
+        <h1 class="headerApp__h1">WEAther App</h1>   
+    </header>
+    
+    
+    <div class="loader" id="loader1">Loading...</div>
+   
+   
+    <div id="container" class="dataContainer">
+        
+        <div class="data1">
+            <div class="data1__banner"><img class="data1ContainerImg" src="mundo.png">
+                 DATE & LOCATION
+            </div>
+            <div class="data1__div">
+                <div id="fecha" class="realData"></div>
+            </div>
+            <div class="data1__div">
+                <div id="lugar" class="realData"></div>
+            </div>    
+        </div> 
+          
+        <!-- ---/--- -->
+        <!-- ---/--- -->
+        <div class="data2"> 
+            <div class="data2__banner"> 
+                <img src="cloudy.png" alt="" class="data2ContainerImg">
+                TODAY'S SKY
+            </div>
+            <div class="data2__div">
+                <div id="description" class="realData"></div>
+            </div>    
+        </div>   
+       <!-- ---/--- -->
+       
+       
+        <div class="data3"> 
+            <div class="data3__banner">
+                <img src="thermometer.png" alt="" class="data3ContainerImg">
+                TEMPERATURE (°C)</div>
+            <div class="data3__div">
+                <div id="temperature" class="realData"></div>
+            </div>
+        </div>
+           
+        
+        
+        
+        <div class="data4">  
+             <div class="data4__banner"> 
+                <img src="clima.png" alt="" class="data4ContainerImg">
+                DETAILS
+            </div>  
+
+            <div class="data4__div"> 
+                <h2 class="subcategory">wind (km/h)</h2>
+                <div id="wind" class="realData"></div>
+            </div>  
+              
+            <div class="data4__div"> 
+                <h2 class="subcategory">humidity (%)</h2>
+                <div id="humidity" class="realData"></div>
+            </div>   
+             
+            <div class="data4__div"> 
+                <h2 class="subcategory">pressure (pa)</h2>
+                <div id="pressure" class="realData"></div>
+            </div>
+        
+        </div>      
+    </div>
+    
+    
+
+    <footer class="footerApp"><b>Javier Kadjo | © Todos los derechos reservados 2022 </b></footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
